@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Slack } from "lucide-react";
 
 const Hero = () => {
+  const handleButtonClick = () => {
+    window.open('https://labs.naptha.ai', '_blank');
+  };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 text-white px-4">
       <div className="text-center max-w-4xl mx-auto">
@@ -44,6 +48,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-xl px-8 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-200"
+            onClick={handleButtonClick}
           >
             Start Your $1 Experiment 🚀
           </Button>

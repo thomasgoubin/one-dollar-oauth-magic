@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Slack } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -20,6 +20,25 @@ const Hero = () => {
         <p className="text-xl md:text-2xl mb-8 opacity-90">
           Because why pay $99/month when you can pay $1? 🤷‍♂️
         </p>
+
+        {/* Integrated Services Section */}
+        <div className="mb-8">
+          <p className="text-sm opacity-75 mb-4">Works with your favorite platforms:</p>
+          <div className="flex items-center justify-center gap-8">
+            <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
+              <span className="text-2xl">💬</span>
+              <span className="font-semibold">Discord</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
+              <Slack className="w-6 h-6" />
+              <span className="font-semibold">Slack</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
+              <Github className="w-6 h-6" />
+              <span className="font-semibold">GitHub</span>
+            </div>
+          </div>
+        </div>
         
         <div className="space-y-4 mb-12">
           <Button 
